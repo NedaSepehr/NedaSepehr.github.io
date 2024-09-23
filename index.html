@@ -24,7 +24,7 @@
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>I am Neda Sinehsepehr, an artist specializing in watercolor and calligraphy. My art explores the balance between form, emotion, and nature, inviting viewers into a space of peace and reflection.</p>
+        <p>I am Neda Sinehsepehr, an artist specializing in watercolor and calligraphy. My art explores the balance between form, emotion, and nature, inviting viewers into a space of peace, reflection, and contemplation. With each stroke and letter, I aim to evoke the harmonious connection between human experience and the natural world, blending traditional Persian calligraphy with modern visual elements.</p>
     </section>
 
     <!-- Watercolor Section -->
@@ -32,12 +32,12 @@
         <h2>Watercolor</h2>
         <div class="gallery">
             <figure>
-                <img src="images/water1.jpg" alt="Watercolor Artwork 1">
-                <figcaption>"Serenity in Nature" — A delicate portrayal of natural landscapes.</figcaption>
+                <img src="images/water1.jpg" alt="Watercolor Artwork 1" onclick="openModal('water1', 'A Moment of Gathering', 'A serene and lively scene that captures the essence of community and peace in an outdoor setting.')">
+                <figcaption>"A Moment of Gathering"</figcaption>
             </figure>
             <figure>
-                <img src="images/water2.jpg" alt="Watercolor Artwork 2">
-                <figcaption>"Whispers of the Forest" — Celebrating the hidden beauty in trees.</figcaption>
+                <img src="images/water2.jpg" alt="Watercolor Artwork 2" onclick="openModal('water2', 'Dance of Colors', 'Vibrant abstract figures in a joyous celebration, captured with the fluidity of watercolor.')">
+                <figcaption>"Dance of Colors"</figcaption>
             </figure>
         </div>
     </section>
@@ -47,12 +47,12 @@
         <h2>Calligraphy</h2>
         <div class="gallery">
             <figure>
-                <img src="images/art1.jpg" alt="Calligraphy Artwork 1">
-                <figcaption>"Harmony of Words" — Connecting words and emotions through unity.</figcaption>
+                <img src="images/art1.jpg" alt="Calligraphy Artwork 1" onclick="openModal('art1', 'Flow of Inspiration', 'Flowing Persian calligraphy strokes symbolizing inspiration and creativity, with abstract background textures.')">
+                <figcaption>"Flow of Inspiration"</figcaption>
             </figure>
             <figure>
-                <img src="images/art2.jpg" alt="Calligraphy Artwork 2">
-                <figcaption>"Echoes of Tradition" — A blend of old and new in Persian calligraphy.</figcaption>
+                <img src="images/art2.jpg" alt="Calligraphy Artwork 2" onclick="openModal('art2', 'Nature’s Calligraphy', 'The fusion of Persian calligraphy and natural elements, creating a peaceful composition.')">
+                <figcaption>"Nature’s Calligraphy"</figcaption>
             </figure>
         </div>
     </section>
@@ -62,12 +62,12 @@
         <h2>Portrait</h2>
         <div class="gallery">
             <figure>
-                <img src="portrait/portrait1.jpg" alt="Portrait 1">
-                <figcaption>"Reflection" — A contemplative expression of inner thoughts.</figcaption>
+                <img src="portrait/portrait1.jpg" alt="Portrait 1" onclick="openModal('portrait1', 'Portrait of a Worker', 'A hardworking man, captured in precise charcoal strokes, with an intense and contemplative expression.')">
+                <figcaption>"Portrait of a Worker"</figcaption>
             </figure>
             <figure>
-                <img src="portrait/portrait2.jpg" alt="Portrait 2">
-                <figcaption>"The Silent Gaze" — Reflecting strength through a still, direct gaze.</figcaption>
+                <img src="portrait/portrait2.jpg" alt="Portrait 2" onclick="openModal('portrait2', 'The Elder’s Wisdom', 'An elderly man, rendered in charcoal, evoking wisdom and life experiences through his thoughtful gaze.')">
+                <figcaption>"The Elder’s Wisdom"</figcaption>
             </figure>
         </div>
     </section>
@@ -87,6 +87,18 @@
         </ul>
     </section>
 
+    <!-- Modal for Enlarged Image -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+            <div id="modalText">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
@@ -96,5 +108,8 @@
     <footer>
         <p>© 2024 Neda Sinehsepehr. All Rights Reserved.</p>
     </footer>
+
+    <!-- Linking JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
