@@ -15,3 +15,7 @@ function openModal(imageId, title, description) {
 
     modal.style.display = "block";
 }
+function closeModal() {
+    const modal = document.getElementById("imageModal");
+    modal.style.display = "none"; // This hides the modal
+}
